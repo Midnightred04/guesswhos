@@ -11,6 +11,13 @@
     <button id="revealBtn">show Image</button>
     <img id="hiddenImage" src="IMG_1747932493326.JPEG" alt="Revealed Image">
   </div>
-  <script src="script.js"></script>
+  <script>
+    const button = document.getElementById("revealBtn");
+const image = document.getElementById("hiddenImage");
+
+button.addEventListener("click", () => {
+  image.classList.add("visible");
+});
+  </script>
 </body>
 </html>
