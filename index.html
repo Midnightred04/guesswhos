@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Animated Image Reveal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Image on Button Click</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <button id="revealBtn">show Image</button>
-    <img id="hiddenImage" src="IMG_1747932493326.JPEG" alt="Revealed Image">
+    <button id="showImageBtn">Show Image</button>
+    <img id="hiddenImage" src="https://via.placeholder.com/300" alt="Sample Image" style="display: none;">
   </div>
-  <script>
-    const button = document.getElementById("revealBtn");
-const image = document.getElementById("hiddenImage");
 
-button.addEventListener("click", () => {
-  image.classList.add("visible");
-});
+  <script>
+    const button = document.getElementById('showImageBtn');
+    const image = document.getElementById('hiddenImage');
+
+    button.addEventListener('click', () => {
+      image.style.display = 'block';
+    });
   </script>
 </body>
 </html>
