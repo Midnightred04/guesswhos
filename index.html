@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Show Image on Button Click</title>
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Click to Reveal the Image!">
+  <meta property="og:title" content="GUESSS">
   <meta property="og:description" content="Click the button to see a surprise image.">
   <meta property="og:image" content="GUESS WHO’S.jpg">
   <meta property="og:type" content="website">
@@ -13,17 +13,17 @@
 </head>
 <body>
   <div class="container">
-    <button id="showImageBtn">WHO COULD POSSIBLY BE GAY THIS TIME?!</button>
-    <img id="hiddenImage" src="IMG_1747932493326.JPEG" alt="Sample Image" style="display: none;">
+    <button id="guessBtn">Guess who's gay?</button>
+    
+    <img id="image1" src="IMG_1747932493326.JPEG" alt="First guess" class="hidden image" />
+    
+    <button id="secondBtn" class="hidden">But wait, guess who's gay this time?</button>
+    
+    <div id="secondImageWrapper" class="hidden rainbow-border">
+      <img id="image2" src="/Users/melvinross/Desktop/guess whom/Screenshot 2025-05-25 at 1.31.30 AM.png" alt="Second guess" />
+    </div>
   </div>
 
-  <script>
-    const button = document.getElementById('showImageBtn');
-    const image = document.getElementById('hiddenImage');
-
-    button.addEventListener('click', () => {
-      image.style.display = 'block';
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
