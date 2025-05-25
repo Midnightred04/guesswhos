@@ -10,7 +10,7 @@ guessBtn.addEventListener('click', () => {
   setTimeout(() => {
     image1.classList.add('hidden');
     secondBtn.classList.remove('hidden');
-  }, 3000);
+  }, 2000);
 });
 
 secondBtn.addEventListener('click', () => {
